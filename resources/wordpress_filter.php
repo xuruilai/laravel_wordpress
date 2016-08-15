@@ -31,30 +31,3 @@ add_filter('all', function($tag, $value = null){
 
 });
 
-
-add_filter('pre_get_site_by_path', function(){
-    $site = new stdClass();
-    $site->blog_id = 1;
-    $site->site_id = 1;
-    $site->domain = 'blog.coding.lxr';
-    $site->path = '/';
-
-    return $site;
-});
-
-
-add_filter('pre_site_option_site_name', function(){
-   return '修改完的Blog';
-});
-
-add_filter('pre_site_option_ms_files_rewriting', function(){
-    return 1;
-});
-
-add_filter('pre_site_option_active_sitewide_plugins', function(){
-    return [];
-});
-
-add_filter('pre_site_option_siteurl', function(){
-    return 'blog.coding.lxr';
-});

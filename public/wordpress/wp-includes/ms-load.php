@@ -257,6 +257,8 @@ function get_site_by_path( $domain, $path, $segments = null ) {
 		return $site;
 	}
 
+
+
 	return false;
 }
 
